@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tony Carbetta </title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" href="css/img/favicon/logo_size_icon.jpg" type="image/x-icon" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111740808-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-111740808-1');
+
+    </script>
+
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PNR7Z98');
+
+    </script>
+    <!-- End Google Tag Manager -->
+
+
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNR7Z98"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111740808-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-111740808-1');
+
+    </script>
+
+
+
+    <div class="container">
+        <header id="main-header">
+            <div class="row no-gutters">
+                <div class="col-lg-4 col-md-5">
+                    <div class="mySlides"><img src="img/good.JPG"></div>
+                    <div class="mySlides"><img src="img/goodBlue.JPG"></div>
+                    <div class="mySlides"><img src="img/goodRed.JPG"></div>
+                    <script>
+                        var slideIndex = 0;
+                        carousel();
+
+                        function carousel() {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            slideIndex++;
+                            if (slideIndex > x.length) {
+                                slideIndex = 1
+                            }
+                            x[slideIndex - 1].style.display = "block";
+                            setTimeout(carousel, 2000); // Change image every 2 seconds
+                        }
+
+                    </script>
+
+                </div>
+                <div class="col-lg-8 col-md-7">
+                    <div class="d-flex flex-column">
+                        <div class="p-5 bg-dark text-white">
+                            <div class="name d-flex flex-row justify-content-between align-items-center">
+                                <h1 class="display-4">Tony Carbetta</h1>
+                                <div><a href="https://www.twitter.com/CarbettaCoding/"><i class="fa fa-twitter"></i></a></div>
+                                <div><a href="https://www.facebook.com/CarbettaCoding/"><i class="fa fa-facebook"></i></a></div>
+                                <div><a href="https://www.instagram.com/Carbetta_Coding/"><i class="fa fa-instagram"></i></a></div>
+                                <div><a href="https://www.github.com/tonyruqusscarbetta/"><i class="fa fa-github"target="_blank"></i></a></div>
+
+                            </div>
+                        </div>
+
+                        <div class="p-4 bg-black">
+                            Junior Front End Web Developer
+                        </div>
+
+                        <div>
+                            <div class="d-flex flex-row text-white align-items-stretch text-center">
+                                <div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#home">
+                                    <i class="fa fa-home d-block"></i> Home
+                                </div>
+                                <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#resume">
+                                    <i class="fa fa-graduation-cap d-block"></i> Resume
+                                </div>
+                                <div class="port-item p-4 bg-warning" data-toggle="collapse" data-target="#work">
+                                    <i class="fa fa-folder-open d-block"></i> Work
+                                </div>
+                                <div class="port-item p-4 bg-danger" data-toggle="collapse" data-target="#contact">
+                                    <i class="fa fa-envelope d-block"></i> Contact
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- HOME -->
+        <div id="home" class="collapse show">
+            <div class="card card-body bg-primary text-white py-5">
+
+
+                <!-- VIDEO PLAY SECTION -->
+                <section id="video-play">
+                    <h1>Welcome!</h1>
+                    <div class="dark-overlay">
+                        <div class="row">
+                            <div class="col">
+                                <div class="container p-5">
+                                    <h2>See what</h2>
+                                    <a href="#" class="video" data-video="https://www.youtube.com/embed/74GmJwCFPTw?rel=0;&autoplay=1" data-toggle="modal" data-target="#videoModal">
+              <i class="fa fa-play"></i>
+            </a>
+                                    <h2>I am like?</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+                <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+
+                                <iframe width="100%" height="350" src="" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!--youtube autoplay video
+                <div class="youtubeVid">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/74GmJwCFPTw?rel=0;&autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+                <!-- -->
+
+
+
+
+
+
+
+
+                <p class="lead">Are you looking for a fast learning, dedicated Junior Front End Developer in the Bay Area who is proficient in an array of scripting languages and always looking to grow? Well than you have found him! Coming from a sales background I <b>work very well under pressure</b> and in <b>fast paced environments</b> with <em>strict deadlines.</em> I <b>work hard</b> and <b>learn quick</b>. When things get rough I’m always the one you can <b>depend on</b> to still show up and get the job done.</p>
+            </div>
+
+            <div class="card card-body py-5">
+                <h3>My Skills</h3>
+                <p>HTML5, CSS3, SASS, Javascript, jQuery, jQueryUI, Bootstrap, Adobe Photoshop, GitHub, Google Analytics, and creating responsive web sites, apps, services, &amp; emails. While sharpening my skills, I am learning additional frameworks like React and Angular. Also, in the early learning stages of back end development with PHP, My SQL, Node, and advanced DOM manipulation. Look at my progress below.</p>
+                <hr>
+                <h4>HTML</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" style="width:100%"></div>
+                </div>
+                <h4>CSS</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" style="width:99%"></div>
+                </div>
+                <h4>Bootstrap</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" style="width:80%"></div>
+                </div>
+                <h4>jQuery</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" style="width:70%"></div>
+                </div>
+                <h4>Javascript</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" style="width:65%"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESUME -->
+        <div id="resume" class="collapse">
+            <div class="card card-body bg-success text-white py-5">
+                <h2>My Resume</h2>
+                <a href="resume/Tony%20Carbetta%20-%20Junior%20Front%20End%20Web%20Developer%20-%20Resume.pdf" class="btn btn-outline-light"><i class="fa fa-cloud"></i><method="get" action="file.doc"></method> View or Download </a>
+            </div>
+
+            <div class="card card-body py-5">
+                <h3>Education &amp; Courses</h3>
+                <h4>Udemy</h4>
+                <p>
+                    • Web Developer Boot Camp – Colt Steele<br> • Ultimate Web Designer &amp; Developer (Build 23 Real World Projects) –Brad Hussey<br> • Bootstrap 4 Code Modern Responsive Websites – Brad Hussey<br> • The Complete Digital Marketing Course – Rob Percival<br> • Web Hosting 101 – Brad Hussey<br> • Logic Pro X Music Production &amp; Sound Engineering – Dubspot School of Electronic Music
+
+                </p>
+                <h3>Where have I worked?</h3>
+                <p>Currently I am activley seeking an employer that I can grow with. Below I've listed some of my professional experience. </p>
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Carbetta Coding</h4>
+
+                            <p class="p-2 mb-3 bg-dark text-white">Front End Web Developer
+
+                                <p class="card-text">• Independently developed a dynamic, secure Web site from scratch. Launched visually appealing, user-friendly site with interactive features to optimize traffic, page views, and user experience (UX).<br> • Provide complete Responsive Website launching services for any small business using best web practices programs and tools.<br> • Regularly keep up with site maintenance, as projects are being completed and updated.<br> • Create a positive customer service and sales experience with clients.
+                                </p>
+
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-muted">Dates: 2017 - Present</h6>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Uber/Lyft</h4>
+                            <p class="p-2 mb-3 bg-dark text-white">
+                                Driver/Student
+                            </p>
+                            <p class="card-text">• Provided flexible hours to pursue my education and Dream/Goal of launching my career as a Web Developer<br> • Over 1,000 rides given to date.<br> • Supplemented income when freelance projects were slow<br> • Gave a deep understanding of the geography and culture of the Bay Area!
+
+                            </p>
+
+
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-muted">Dates: 2016 - Present</h6>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Sears Holdings Corp.</h4>
+                            <p class="p-2 mb-3 bg-dark text-white">
+                                Commission Sales
+                            </p>
+                            <p class="card-text">•SOLD OVER 1.2 MILLION DOLLARS worth of appliances in 2015 alone!<br> (Gaining corporate recognition)<br> •Started off knowing absolutely nothing about large appliances and within the first two months working full time commission sales, I earned Best of Blue awards for going above company standards and exceeding my sales goals.<br> •Top performing salesman numerous months.
+                                <br>•Started as a seasonal cashier, quickly became top performing full time cashier for two years. Than promptly promoted to selling big-ticket items in appliances.
+                            </p>
+
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-muted">Dates: 2010 - 2016</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- WORK -->
+        <div id="work" class="collapse">
+            <div class="card card-body bg-warning py-5">
+                <h3>My Portfolio</h3>
+                <h4>Please enjoy some of the work I have created. More projects are on their way. </h4>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xl-4">
+                    <div class="project project-radius project-primary">
+                        <div class="shape">
+                            <div class="shape-text">
+                                #1
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="lead">
+                                Carbetta Coding Website
+                            </h3>
+                            <p>A dynamically developed full scale web design &amp; development business website. I had alot of fun creating this from the ground up and learned alot as I was putting things I have learned in classes into actual experience on projects. I believe this is the best way to learn. In this project I utilized alot of Bootstrap, and some jQuery/Javascript basics for special effects.
+                                <br>
+                                <br><img src="img/logo_size.jpg" alt="Carbetta Coding Logo">
+                                <br>
+
+                                <!--
+                                <link src="js/bootstrap.min.js" rel="stylesheet" />
+                                <a href="http://www.carbettacoding.com" role="button" class="btn btn-warning">Click to visit</a>-->
+
+                                <br><a class="btn-primary nav-link active" href="http://www.carbettacoding.com">Click to Visit</a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-xl-4">
+                    <div class="project project-success">
+                        <div class="shape">
+                            <div class="shape-text">
+                                #2
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="lead">
+                                RaceCar Game
+                            </h3>
+                            <p>
+                                Which car is going to be the fastest? I made this as I was learning jQuery in one of the Animation courses I was taking. Have some fun betting your friends or family on which car is going to win!
+                                <br><img src="img/car1.png" alt="race car">
+                                <br>
+                                <br><img src="img/car2.png" alt="race car 2">
+                                <br><a class="btn-success nav-link active" href="raceCarGame/car.html">Click to Play</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xl-4">
+                    <div class="project project-radius project-warning">
+                        <div class="shape">
+                            <div class="shape-text">
+                                #3
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="trashCan">
+                                <h3 class="lead">
+                                    Task Manager Plus App
+                                </h3>
+                                <p>
+                                    Do you have trouble multi-tasking or prioritizing your tasks? Have fun creating/editing/dragging/ &amp; dropping your tasks. <br>
+                                    <br><img src="css/img/trashCan.JPG" alt="">
+                                    <br><a class="btn-warning nav-link active" href="taskManagerPlus/taskManagerPlus.html">Click to Open</a>
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- CONTACT -->
+    <div id="contact" class="collapse">
+        <div class="card card-body bg-danger text-white py-5">
+            <h2>Contact</h2>
+            <p></p>
+        </div>
+
+
+
+        <div class="card card-body py-5">
+            <h3>Get in touch</h3>
+            <p>To contact me for any reason, please <b>fill out the form</b> below or email me directly <a href="mailto:tonycarbetta@gmail.com">tonycarbetta@gmail.com</a>. I will get back to you shortly. Thank You.</p>
+
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScjlX3jyY6rEhuXFclYxQlF8OirMZoBtdS99ChnntrYFkVaYw/viewform?embedded=true" width="auto" height="885" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="p-5 bg-dark text-white">
+
+        <div class="row">
+            <div class="col-md-6">
+                <!--<form method="get" action="file.doc">
+   <button type="submit">Download!</button>
+</form>-->
+                <a href="resume/Tony%20Carbetta%20-%20Junior%20Front%20End%20Web%20Developer%20-%20Resume.pdf" class="btn btn-outline-light"><i class="fa fa-cloud"></i><method="get" action="file.doc"></method> View or Download Resume</a>
+                <img style="border-radius: 2%;" src="img/footer.jpg" alt="Carbetta Coding Logo">
+                <p>&copy; Carbetta Coding 2018</p>
+                <a href="#">Back to top</a>
+
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $('.port-item').click(function() {
+            $('.collapse').collapse('hide');
+        });
+
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+
+    </script>
+</body>
+
+</html>
