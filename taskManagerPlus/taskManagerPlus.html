@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <title>Task Manager Plus</title>
+
+
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+
+    <!-- jQuery UI CSS -->
+    <link href="js/jquery-ui-1.11.4/jquery-ui.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="#todoListWrapper">
+            <h1>Task Manager Plus</h1>
+
+            <div id="todoList">
+
+                <h2>Instructions:</h2>
+                <p>#1 Click on the day of the week that your task falls on, type in your task, press enter.<br> #2 Continue the process until you have completed typing all your list of tasks.<br> #3 When a task is completed, click on the task, drag it to the delete/trash area, than drop it.<br> **Drag drop feature only works on Desktop.**<br> If you are on a <b>mobile device</b>, than simply delete your text when you are done with a task.
+                </p>
+
+                <div class="contain1">
+                    <ul>
+                        <li class="listTitle">Monday</li>
+                        <li class="addItem"><input type="text" placeholder="add new item..."></li>
+                    </ul>
+                    <ul>
+                        <li class="listTitle">Tuesday</li>
+                        <li class="addItem"><input type="text" placeholder="add new item..."></li>
+                    </ul>
+                    <ul>
+                        <li class="listTitle">Wednesday</li>
+                        <li class="addItem"><input type="text" placeholder="add new item..."></li>
+                    </ul>
+                    <ul>
+                        <li class="listTitle">Thursday</li>
+                        <li class="addItem"><input type="text" placeholder="add new item..."></li>
+                    </ul>
+                </div>
+
+                <div class="contain2">
+                    <ul>
+                        <li class="listTitle">Friday</li>
+                        <li class="addItem"><input type="text" placeholder="add new item..."></li>
+                    </ul>
+                    <ul>
+                        <li class="listTitle">Saturday</li>
+                        <li class="addItem"><input type="text" placeholder="add new item..."></li>
+                    </ul>
+                    <ul>
+                        <li class="listTitle">Sunday</li>
+                        <li class="addItem"><input type="text" placeholder="add new item..."></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- #todoList -->
+
+    </div>
+    <!-- .container -->
+
+    <div id="trash">drop here to delete an item</div>
+
+    <!-- Load the CDN first -->
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- If CDN fails to load, serve up the local version -->
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-2.1.4.js"><\/script>');
+
+    </script>
+
+    <!-- jQuery UI -->
+    <script src="js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+/* styles.css */
+
+body {
+    background: #000;
+}
+
+p {
+    color: #;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    /*width: 800px;*/
+    margin: 40px auto;
+    background: #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    border: solid 1px #ccc;
+}
+
+.container:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.fixedContainer {
+    /* fixed height container
+       with overflow for scrollbar
+    */
+    *height: 400px;
+    overflow: auto;
+}
+
+.box {
+    height: 120px;
+    width: 120px;
+    background: #000;
+    color: white;
+    line-height: 120px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#box1 {
+    background: #38c;
+}
+
+#box2 {
+    background: #9d9;
+}
+
+#box3 {
+    background: #c27;
+}
+
+#droppable {
+    background: #222;
+    border: solid 2px #000;
+    height: 300px;
+    width: 400px;
+    line-height: 300px;
+    text-align: center;
+    color: white;
+    margin: 40px auto;
+}
+
+ul {
+    width: 48%;
+    float: left;
+    margin: 0;
+    padding: 0 1%;
+    list-style: none;
+}
+
+ul li {
+    background: #eee;
+    padding: 10px;
+    margin: 2px 0;
+    border: solid 1px #ccc;
+}
+
+ul li:hover {
+    background: #ddd;
+    border-color: #aaa;
+    cursor: pointer;
+}
+
+ul li:active {
+    transform: rotate(2deg);
+    background: #ccc;
+    border-color: #999;
+    box-shadow: 0 10px -4px #111;
+}
+
+.placeholderBox {
+    background: #777;
+    height: 20px;
+    border: dashed 2px #777;
+}
+
+/* ---------
+   TODO LIST
+   --------- */
+
+#todoListWrapper {
+    width: 960px;
+    text-align: center;
+
+}
+
+#todoList:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+#todoList ul {
+    width: 14.28%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline;
+}
+
+#todoList li {
+    background: none;
+    padding: 5px;
+    border: none;
+    margin: 0;
+    text-align: left;
+    font-size: 12px;
+}
+
+#todoList li:hover {
+    background: #eee;
+}
+
+#todoList li.listTitle {
+    background: #444;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-right: solid 1px white;
+    font-size: 9px;
+}
+
+#todoList li.listTitle:hover,
+#todoList li.listTitle:active {
+    cursor: default;
+    transform: none;
+}
+
+#todoList .emptySpace {
+    background: #524d4d;
+    border: dashed 1px ##524d4d;
+    height: 10px;
+}
+
+#todoList li.addItem {
+    display: none;
+    position: absolute;
+    top: 0;
+    background: none;
+}
+
+#todoList ul:hover li.addItem {
+    display: block;
+}
+
+#todoList li.addItem input {
+    width: 100%;
+    padding: 4px;
+}
+
+#todoList li.addItem:active {
+    transform: none;
+}
+
+#trash {
+    background-image: url(img/trashCan1.png);
+    /*background: rgba(178, 73, 38, 0.7);*/
+    background-size: cover;
+    height: 400px;
+    width: 300px;
+    margin: 50px auto 0;
+    line-height: 200px;
+    text-align: center;
+    color: whitesmoke;
+
+}
+
+
+h1 {
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0, 0, 0, .1),
+    0 0 5px rgba(0, 0, 0, .1),
+    0 1px 3px rgba(0, 0, 0, .3),
+    0 3px 5px rgba(0, 0, 0, .2),
+    0 5px 10px rgba(0, 0, 0, .25),
+    0 10px 10px rgba(0, 0, 0, .2),
+    0 20px 20px rgba(0, 0, 0, .15);
+    text-align: center;
+    font-size: 60px;
+}
