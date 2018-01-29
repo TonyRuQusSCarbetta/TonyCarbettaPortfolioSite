@@ -215,7 +215,9 @@
 }
 
 
-.footer {
+#main-footer .col-md-6 {
+    margin: 0 auto;
+    max-width: 450px;
     text-align: center;
 }
 
